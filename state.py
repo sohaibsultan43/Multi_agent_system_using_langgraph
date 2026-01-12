@@ -9,3 +9,5 @@ class AgentState(TypedDict):
     plan: List[str]
     research_data: Annotated[List[str], operator.add]
     final_report: str
+    review: str
+    revision_number: int
