@@ -2,4 +2,6 @@ langgraph
 langchain
 langchain-community
 langchain-openai
-duckduckgo-search
+langchain-tavily
+python-dotenv
+pydantic

@@ -7,7 +7,10 @@ from typing import Annotated, List, TypedDict
 class AgentState(TypedDict):
     topic: str
     plan: List[str]
-    research_data: Annotated[List[str], operator.add]
+    # Changed from List[str] to List[dict] to store URL and content with scores
+    research_data: Annotated[List[dict], operator.add]
+    synthesized_notes: str  # Clean, filtered notes for the writer
     final_report: str
     review: str
     revision_number: int
+    human_review_ready: bool
